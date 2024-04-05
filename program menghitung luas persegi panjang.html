@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas Persegi Panjang</title>
+</head>
+<body>
+    <h1>Hitung Luas Persegi Panjang</h1>
+    Panjang: <input type="number" id="panjang"> <br>
+    Lebar: <input type="number" id="lebar"> <br>
+    <button onclick="hitungLuas()">Hitung Luas</button>
+    
+    <div id="hasil"></div>
+
+    <script>
+        function hitungLuas() {
+            var panjang = parseFloat(document.getElementById("panjang").value);
+            var lebar = parseFloat(document.getElementById("lebar").value);
+            var luas = panjang * lebar;
+            document.getElementById("hasil").innerText = "Luas Persegi Panjang: " + luas;
+        }
+    </script>
+</body>
+</html>
